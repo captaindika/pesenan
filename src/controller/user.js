@@ -3,6 +3,7 @@ const {queryWilayah} = require('../model/user')
 const searchLokasi = async (req, res) => {
   const {provinsi} = req.params
   let {isKota,kota, kecamatan, kelurahan, kodepos} = req.query
+  console.log(kota)
   const wilayah = {
     provinsi: provinsi || '',
     isKota,
