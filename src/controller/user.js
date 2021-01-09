@@ -5,7 +5,7 @@ const searchLokasi = async (req, res) => {
   let {isKota,kota, kecamatan, kelurahan, kodepos} = req.query
   const wilayah = {
     provinsi: provinsi || '',
-    isKota: isKota || 'kota',
+    isKota,
     kota: kota || '',
     kecamatan: kecamatan || '',
     kelurahan: kelurahan || '',
